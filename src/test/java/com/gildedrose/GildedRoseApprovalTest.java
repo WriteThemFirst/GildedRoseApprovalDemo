@@ -12,7 +12,7 @@ class GildedRoseApprovalTest {
     private Approvals approvals = new Approvals();
 
     @Test
-    void updateQuality_normal_shouldDecrease() throws Exception {
+    void updateQuality_normal_shouldDecrease() {
         Item item = doTest(BRIE, -2, 10);
         approvals.verify(item);
     }
