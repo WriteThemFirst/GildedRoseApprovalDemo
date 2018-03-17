@@ -9,4 +9,3 @@ indent_size = 4
 
 [*.approved]
 insert_final_newline = false
-end_of_line = unset
