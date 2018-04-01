@@ -1,26 +1,25 @@
 package com.gildedrose;
 
 
-import com.github.writethemfirst.approvals.Approvals;
 import org.junit.jupiter.api.Test;
 
 import static com.gildedrose.ItemNames.*;
+import static com.github.writethemfirst.approvals.Approvals.*;
 import static java.util.Arrays.asList;
 
 
 class GildedRoseApprovalTest {
 
-    private Approvals approvals = new Approvals();
 
     @Test
     void updateQuality_normal_shouldDecrease() {
         Item item = doTest(BRIE, -2, 10);
-        approvals.verify(item);
+        verify(item);
     }
 
     @Test
     void updateQuality_normal_shouldDecrease_all() {
-        approvals.verifyAll(
+        verifyAllCombinations(
             asList("normal item"),
             asList(-1, 0, 1, 10),
             asList(-1, 0, 1, 10),
@@ -29,7 +28,7 @@ class GildedRoseApprovalTest {
 
     @Test
     void updateQuality_brie_shouldDecrease_all() {
-        approvals.verifyAll(
+        verifyAllCombinations(
             asList(BRIE),
             asList(-1, 0, 1, 10),
             asList(-1, 0, 1, 10),
@@ -38,7 +37,7 @@ class GildedRoseApprovalTest {
 
     @Test
     void updateQuality_sulfuras_shouldStay() {
-        approvals.verifyAll(
+        verifyAllCombinations(
             asList(SULFURAS),
             asList(-1, 0, 1, 10),
             asList(-1, 0, 1, 50, 51),
@@ -47,7 +46,7 @@ class GildedRoseApprovalTest {
 
     @Test
     void updateQuality_pass_shouldEvolve() {
-        approvals.verifyAll(
+        verifyAllCombinations(
             asList(PASS),
             asList(-1, 0, 1, 5, 6, 10, 11),
             asList(-1, 0, 1, 10),

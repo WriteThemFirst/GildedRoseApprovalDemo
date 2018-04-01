@@ -1,0 +1,16 @@
+normal item, -2, -1 <== , normal item, -1, -1
+normal item, -2, 0 <== , normal item, -1, 0
+normal item, -2, 0 <== , normal item, -1, 1
+normal item, -2, 8 <== , normal item, -1, 10
+normal item, -1, -1 <== , normal item, 0, -1
+normal item, -1, 0 <== , normal item, 0, 0
+normal item, -1, 0 <== , normal item, 0, 1
+normal item, -1, 8 <== , normal item, 0, 10
+normal item, 0, -1 <== , normal item, 1, -1
+normal item, 0, 0 <== , normal item, 1, 0
+normal item, 0, 0 <== , normal item, 1, 1
+normal item, 0, 9 <== , normal item, 1, 10
+normal item, 9, -1 <== , normal item, 10, -1
+normal item, 9, 0 <== , normal item, 10, 0
+normal item, 9, 0 <== , normal item, 10, 1
+normal item, 9, 9 <== , normal item, 10, 10
