@@ -5,7 +5,7 @@
 
     <groupId>com.tyrcho</groupId>
     <artifactId>gilded-rose</artifactId>
-    <version>0.4.1</version>
+    <version>0.5.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,4 +30,14 @@
         </dependency>
     </dependencies>
 
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray-writethemfirst-maven</id>
+            <name>bintray</name>
+            <url>https://dl.bintray.com/writethemfirst/maven</url>
+        </repository>
+    </repositories>
 </project>
